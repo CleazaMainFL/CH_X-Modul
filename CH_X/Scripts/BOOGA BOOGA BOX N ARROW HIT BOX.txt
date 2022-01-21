@@ -1,0 +1,10 @@
+local color = "Black"
+while wait() do
+for _, v in pairs(game.Players:GetPlayers()) do
+if v.Name ~= "63kLaxuren" then  -- Put your Roblox username here
+v.Character.HumanoidRootPart.Transparency = 0.35
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new(color)
+v.Character.HumanoidRootPart.Size = Vector3.new(40,40,40)
+end
+end
+end

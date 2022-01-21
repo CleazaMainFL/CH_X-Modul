@@ -1,0 +1,6 @@
+getgenv().AutofarmConfig = {
+Keybind = "F6",
+Align = CFrame.new(0,-4,0),
+EnableOptimization = true -- enable optimization if your pc potato (will freeze your game around 5 secs)
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BRM5/Autofarm.lua"))()

@@ -1,0 +1,1243 @@
+-- By Magik
+-- Version: 1.3
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TPGUI = Instance.new("Frame")
+local drag = Instance.new("Frame")
+local drag2 = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local MadeBy = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local RaidMode = Instance.new("TextLabel")
+local Parcel1 = Instance.new("TextButton")
+local Parcel2 = Instance.new("TextButton")
+local Parcel3 = Instance.new("TextButton")
+local Parcel4 = Instance.new("TextButton")
+local Parcel5 = Instance.new("TextButton")
+local OpenWorld = Instance.new("TextLabel")
+local MainBase = Instance.new("TextButton")
+local VehicleSpawn = Instance.new("TextButton")
+local DesertBase = Instance.new("TextButton")
+local MTN = Instance.new("TextButton")
+local Ronograd = Instance.new("TextButton")
+local Hangar = Instance.new("TextButton")
+local SnowBase = Instance.new("TextButton")
+local GarageMTN = Instance.new("TextButton")
+local GunMods = Instance.new("TextLabel")
+local Norecoil = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local FullBright = Instance.new("TextButton")
+local GodMode = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local exit = Instance.new("TextButton")
+local Disclamier = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local exit2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TPGUI.Name = "TPGUI"
+TPGUI.Parent = ScreenGui
+TPGUI.Active = true
+TPGUI.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+TPGUI.BorderColor3 = Color3.fromRGB(0, 170, 255)
+TPGUI.BorderSizePixel = 0
+TPGUI.Draggable = true
+TPGUI.Position = UDim2.new(0.3920542, -119, 0.34658581, -117)
+TPGUI.Size = UDim2.new(0, 416, 0, 269)
+TPGUI.Visible = false
+TPGUI.Style = Enum.FrameStyle.RobloxSquare
+
+drag.Name = "drag"
+drag.Parent = TPGUI
+drag.BackgroundColor3 = Color3.fromRGB(119, 0, 255)
+drag.BorderSizePixel = 0
+drag.Position = UDim2.new(-0.0210603569, 0, -0.0334572457, 0)
+drag.Size = UDim2.new(0, 418, 0, 9)
+
+drag2.Name = "drag2"
+drag2.Parent = TPGUI
+drag2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+drag2.BackgroundTransparency = 0.500
+drag2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+drag2.BorderSizePixel = 0
+drag2.Position = UDim2.new(-0.0182366017, 0, 0.003207976, 0)
+drag2.Size = UDim2.new(0, 416, 0, 25)
+
+title.Name = "title"
+title.Parent = TPGUI
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderSizePixel = 0
+title.Position = UDim2.new(-0.0520524383, 0, 0.00296568871, 0)
+title.Size = UDim2.new(0, 143, 0, 18)
+title.Font = Enum.Font.SciFi
+title.Text = "SimpleTPBRM5"
+title.TextColor3 = Color3.fromRGB(117, 0, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextStrokeTransparency = 0.000
+title.TextWrapped = true
+
+MadeBy.Name = "Made By"
+MadeBy.Parent = TPGUI
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.BorderSizePixel = 0
+MadeBy.Position = UDim2.new(0.729695559, 0, -0.00817495491, 0)
+MadeBy.Size = UDim2.new(0, 137, 0, 24)
+MadeBy.Font = Enum.Font.SciFi
+MadeBy.Text = "By Magik"
+MadeBy.TextColor3 = Color3.fromRGB(168, 0, 255)
+MadeBy.TextScaled = true
+MadeBy.TextSize = 14.000
+MadeBy.TextStrokeTransparency = 0.000
+MadeBy.TextWrapped = true
+
+Version.Name = "Version"
+Version.Parent = TPGUI
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.903238893, 0, 0.804032922, 0)
+Version.Size = UDim2.new(0, 42, 0, 16)
+Version.Font = Enum.Font.SciFi
+Version.Text = "v 1.3"
+Version.TextColor3 = Color3.fromRGB(165, 0, 255)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextStrokeTransparency = 0.000
+Version.TextWrapped = true
+
+RaidMode.Name = "Raid Mode"
+RaidMode.Parent = TPGUI
+RaidMode.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+RaidMode.BackgroundTransparency = 0.510
+RaidMode.Position = UDim2.new(-0.0198711976, 0, 0.865244806, 0)
+RaidMode.Size = UDim2.new(0, 415, 0, 25)
+RaidMode.Font = Enum.Font.SciFi
+RaidMode.Text = "Raid Mode (Currently Removed From the Game)"
+RaidMode.TextColor3 = Color3.fromRGB(151, 0, 255)
+RaidMode.TextSize = 14.000
+
+Parcel1.Name = "Parcel 1"
+Parcel1.Parent = RaidMode
+Parcel1.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Parcel1.Position = UDim2.new(0.00260416791, 0, 1, 0)
+Parcel1.Size = UDim2.new(0, 71, 0, 16)
+Parcel1.Font = Enum.Font.SciFi
+Parcel1.Text = "Bag 1"
+Parcel1.TextColor3 = Color3.fromRGB(163, 0, 255)
+Parcel1.TextSize = 14.000
+
+Parcel2.Name = "Parcel 2"
+Parcel2.Parent = RaidMode
+Parcel2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Parcel2.Position = UDim2.new(0.203125, 0, 1, 0)
+Parcel2.Size = UDim2.new(0, 71, 0, 16)
+Parcel2.Font = Enum.Font.SciFi
+Parcel2.Text = "Bag 2"
+Parcel2.TextColor3 = Color3.fromRGB(161, 0, 255)
+Parcel2.TextSize = 14.000
+
+Parcel3.Name = "Parcel 3"
+Parcel3.Parent = RaidMode
+Parcel3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Parcel3.Position = UDim2.new(0.40625, 0, 1, 0)
+Parcel3.Size = UDim2.new(0, 71, 0, 16)
+Parcel3.Font = Enum.Font.SciFi
+Parcel3.Text = "Bag 3"
+Parcel3.TextColor3 = Color3.fromRGB(158, 0, 255)
+Parcel3.TextSize = 14.000
+
+Parcel4.Name = "Parcel 4"
+Parcel4.Parent = RaidMode
+Parcel4.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Parcel4.Position = UDim2.new(0.6171875, 0, 1, 0)
+Parcel4.Size = UDim2.new(0, 71, 0, 16)
+Parcel4.Font = Enum.Font.SciFi
+Parcel4.Text = "Bag 4"
+Parcel4.TextColor3 = Color3.fromRGB(156, 0, 255)
+Parcel4.TextSize = 14.000
+
+Parcel5.Name = "Parcel 5"
+Parcel5.Parent = RaidMode
+Parcel5.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Parcel5.Position = UDim2.new(0.828125179, 0, 1, 0)
+Parcel5.Size = UDim2.new(0, 65, 0, 16)
+Parcel5.Font = Enum.Font.SciFi
+Parcel5.Text = "Bag 5"
+Parcel5.TextColor3 = Color3.fromRGB(154, 0, 255)
+Parcel5.TextSize = 14.000
+
+OpenWorld.Name = "Open World"
+OpenWorld.Parent = TPGUI
+OpenWorld.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+OpenWorld.BackgroundTransparency = 0.510
+OpenWorld.Position = UDim2.new(-0.0169027783, 0, 0.100196697, 0)
+OpenWorld.Size = UDim2.new(0, 412, 0, 15)
+OpenWorld.Font = Enum.Font.SciFi
+OpenWorld.Text = "Open World"
+OpenWorld.TextColor3 = Color3.fromRGB(131, 0, 255)
+OpenWorld.TextSize = 14.000
+
+MainBase.Name = "MainBase"
+MainBase.Parent = OpenWorld
+MainBase.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+MainBase.BorderColor3 = Color3.fromRGB(85, 85, 85)
+MainBase.Position = UDim2.new(0.00260416605, 0, 0.939394593, 0)
+MainBase.Size = UDim2.new(0, 94, 0, 30)
+MainBase.Font = Enum.Font.SciFi
+MainBase.Text = "Main Base"
+MainBase.TextColor3 = Color3.fromRGB(149, 0, 255)
+MainBase.TextSize = 14.000
+MainBase.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-4014.5852050781, 64.216064453125, 806.1005859375))
+end)
+
+VehicleSpawn.Name = "VehicleSpawn"
+VehicleSpawn.Parent = OpenWorld
+VehicleSpawn.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+VehicleSpawn.BorderColor3 = Color3.fromRGB(85, 85, 85)
+VehicleSpawn.Position = UDim2.new(0.00260416605, 0, 3.61212206, 0)
+VehicleSpawn.Size = UDim2.new(0, 94, 0, 30)
+VehicleSpawn.Font = Enum.Font.SciFi
+VehicleSpawn.Text = "VehicleSpawn"
+VehicleSpawn.TextColor3 = Color3.fromRGB(147, 0, 255)
+VehicleSpawn.TextSize = 13.000
+VehicleSpawn.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-3511.46191, 64.1496964, 532.689941))
+end)
+
+DesertBase.Name = "Desert Base"
+DesertBase.Parent = OpenWorld
+DesertBase.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+DesertBase.BorderColor3 = Color3.fromRGB(85, 85, 85)
+DesertBase.Position = UDim2.new(0.250050545, 0, 0.939394593, 0)
+DesertBase.Size = UDim2.new(0, 94, 0, 30)
+DesertBase.Font = Enum.Font.SciFi
+DesertBase.Text = "Desert Base"
+DesertBase.TextColor3 = Color3.fromRGB(145, 0, 255)
+DesertBase.TextSize = 14.000
+DesertBase.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-5034.697265625, 107.6656036377, 5563.3862304688))
+end)
+
+MTN.Name = "MTN"
+MTN.Parent = OpenWorld
+MTN.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+MTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MTN.Position = UDim2.new(0.250050545, 0, 3.61212206, 0)
+MTN.Size = UDim2.new(0, 94, 0, 30)
+MTN.Font = Enum.Font.SciFi
+MTN.Text = "MTN"
+MTN.TextColor3 = Color3.fromRGB(142, 0, 255)
+MTN.TextSize = 14.000
+MTN.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1810.47156, 823.450012, -4422.93555))
+end)
+
+Ronograd.Name = "Ronograd"
+Ronograd.Parent = OpenWorld
+Ronograd.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Ronograd.BorderColor3 = Color3.fromRGB(85, 85, 85)
+Ronograd.Position = UDim2.new(0.498685271, 0, 0.939394593, 0)
+Ronograd.Size = UDim2.new(0, 94, 0, 30)
+Ronograd.Font = Enum.Font.SciFi
+Ronograd.Text = "Ronograd"
+Ronograd.TextColor3 = Color3.fromRGB(140, 0, 255)
+Ronograd.TextSize = 14.000
+Ronograd.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3429.4860839844, 176.24705505371, 548.41180419922))
+end)
+
+Hangar.Name = "Hangar"
+Hangar.Parent = OpenWorld
+Hangar.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Hangar.BorderColor3 = Color3.fromRGB(85, 85, 85)
+Hangar.Position = UDim2.new(0.49625811, 0, 3.61212206, 0)
+Hangar.Size = UDim2.new(0, 94, 0, 30)
+Hangar.Font = Enum.Font.SciFi
+Hangar.Text = "A-10 Spawn"
+Hangar.TextColor3 = Color3.fromRGB(138, 0, 255)
+Hangar.TextSize = 14.000
+Hangar.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-4012.9162597656, 61.649993896484, 611.87780761719))
+end)
+
+SnowBase.Name = "Snow Base"
+SnowBase.Parent = OpenWorld
+SnowBase.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+SnowBase.BorderColor3 = Color3.fromRGB(85, 85, 85)
+SnowBase.Position = UDim2.new(0.743830979, 0, 0.939394593, 0)
+SnowBase.Size = UDim2.new(0, 94, 0, 30)
+SnowBase.Font = Enum.Font.SciFi
+SnowBase.Text = "Snow Base"
+SnowBase.TextColor3 = Color3.fromRGB(135, 0, 255)
+SnowBase.TextSize = 14.000
+SnowBase.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(6465.91504, 221.630447, -1257.77771))
+end)
+
+GarageMTN.Name = "Garage MTN"
+GarageMTN.Parent = OpenWorld
+GarageMTN.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+GarageMTN.BorderColor3 = Color3.fromRGB(85, 85, 85)
+GarageMTN.Position = UDim2.new(0.743830919, 0, 3.61212206, 0)
+GarageMTN.Size = UDim2.new(0, 94, 0, 30)
+GarageMTN.Font = Enum.Font.SciFi
+GarageMTN.Text = "Garage MTN"
+GarageMTN.TextColor3 = Color3.fromRGB(133, 0, 255)
+GarageMTN.TextSize = 14.000
+GarageMTN.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1703.16064, 823.450012, -4374.13916))
+end)
+
+GunMods.Name = "Gun Mods"
+GunMods.Parent = TPGUI
+GunMods.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+GunMods.BackgroundTransparency = 0.510
+GunMods.Position = UDim2.new(-0.0213863645, 0, 0.445768356, 0)
+GunMods.Size = UDim2.new(0, 416, 0, 25)
+GunMods.Font = Enum.Font.SciFi
+GunMods.Text = "Gun Mods + New Shit UPDATED"
+GunMods.TextColor3 = Color3.fromRGB(124, 0, 255)
+GunMods.TextSize = 14.000
+
+Norecoil.Name = "No recoil"
+Norecoil.Parent = GunMods
+Norecoil.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Norecoil.BorderColor3 = Color3.fromRGB(85, 85, 85)
+Norecoil.Position = UDim2.new(0.0050601624, 0, 1.25999999, 0)
+Norecoil.Size = UDim2.new(0, 94, 0, 30)
+Norecoil.Font = Enum.Font.SciFi
+Norecoil.Text = "No Recoil"
+Norecoil.TextColor3 = Color3.fromRGB(129, 0, 255)
+Norecoil.TextSize = 14.000
+Norecoil.MouseButton1Click:connect(function()
+	local Frame = game:GetService("Players").LocalPlayer.PlayerGui.HUDInterface.Container.Weapon
+
+	local function ModWeapon()
+		if Frame.Visible then
+			for _, Ballsack in next, getgc(true) do
+				if type(Ballsack) == "table" and rawget(Ballsack, "Recoil") then
+					if type(Ballsack.Recoil) == "number" then
+						Ballsack.Recoil = 0
+						--Ballsack.Velocity = 9e9 --instant fast bullets idk
+					end
+				end
+			end
+		end
+	end
+
+	Frame:GetPropertyChangedSignal("Visible"):Connect(ModWeapon)
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = GunMods
+Fly.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Fly.Position = UDim2.new(0.496131182, 0, 1.25999999, 0)
+Fly.Size = UDim2.new(0, 94, 0, 30)
+Fly.Font = Enum.Font.SciFi
+Fly.Text = "Fly Press T"
+Fly.TextColor3 = Color3.fromRGB(126, 0, 255)
+Fly.TextSize = 14.000
+Fly.MouseButton1Click:connect(function()
+	repeat wait()
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Head
+	local flying = false
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 400
+	local speed = 5000
+
+	function Fly()
+		local bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		local bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		repeat wait()
+			plr.Character.Humanoid.PlatformStand = true
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0.1,0)
+			end
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		until not flying
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+	end
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "t" then
+			if flying then flying = false
+			else
+				flying = true
+				Fly()
+			end
+		elseif key:lower() == "w" then
+			ctrl.f = 1
+		elseif key:lower() == "s" then
+			ctrl.b = -1
+		elseif key:lower() == "a" then
+			ctrl.l = -1
+		elseif key:lower() == "d" then
+			ctrl.r = 1
+		end
+	end)
+	mouse.KeyUp:connect(function(key)
+		if key:lower() == "w" then
+			ctrl.f = 0
+		elseif key:lower() == "s" then
+			ctrl.b = 0
+		elseif key:lower() == "a" then
+			ctrl.l = 0
+		elseif key:lower() == "d" then
+			ctrl.r = 0
+		end
+	end)
+	Fly()
+	while wait(.1) do
+		for _,v in ipairs(workspace.Levels.Forest:GetChildren()) do
+			if v.Name == "SpawnPoint" then
+				v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			end
+		end
+	end
+end)
+
+FullBright.Name = "Full Bright"
+FullBright.Parent = GunMods
+FullBright.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+FullBright.Position = UDim2.new(0.255972475, 0, 1.25999999, 0)
+FullBright.Size = UDim2.new(0, 92, 0, 30)
+FullBright.Font = Enum.Font.SciFi
+FullBright.Text = "Full Bright"
+FullBright.TextColor3 = Color3.fromRGB(122, 0, 255)
+FullBright.TextSize = 14.000
+FullBright.MouseButton1Click:connect(function()
+	if not _G.FullBrightExecuted then
+
+		_G.FullBrightEnabled = false
+
+		_G.NormalLightingSettings = {
+			Brightness = game:GetService("Lighting").Brightness,
+			ClockTime = game:GetService("Lighting").ClockTime,
+			FogEnd = game:GetService("Lighting").FogEnd,
+			GlobalShadows = game:GetService("Lighting").GlobalShadows,
+			Ambient = game:GetService("Lighting").Ambient
+		}
+
+		game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
+			if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
+				_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
+				if not _G.FullBrightEnabled then
+					repeat
+						wait()
+					until _G.FullBrightEnabled
+				end
+				game:GetService("Lighting").Brightness = 1
+			end
+		end)
+
+		game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
+			if game:GetService("Lighting").ClockTime ~= 12 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
+				_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
+				if not _G.FullBrightEnabled then
+					repeat
+						wait()
+					until _G.FullBrightEnabled
+				end
+				game:GetService("Lighting").ClockTime = 12
+			end
+		end)
+
+		game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
+			if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
+				_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
+				if not _G.FullBrightEnabled then
+					repeat
+						wait()
+					until _G.FullBrightEnabled
+				end
+				game:GetService("Lighting").FogEnd = 786543
+			end
+		end)
+
+		game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
+			if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
+				_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
+				if not _G.FullBrightEnabled then
+					repeat
+						wait()
+					until _G.FullBrightEnabled
+				end
+				game:GetService("Lighting").GlobalShadows = false
+			end
+		end)
+
+		game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
+			if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
+				_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
+				if not _G.FullBrightEnabled then
+					repeat
+						wait()
+					until _G.FullBrightEnabled
+				end
+				game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+			end
+		end)
+
+		game:GetService("Lighting").Brightness = 1
+		game:GetService("Lighting").ClockTime = 12
+		game:GetService("Lighting").FogEnd = 786543
+		game:GetService("Lighting").GlobalShadows = false
+		game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+
+		local LatestValue = true
+		spawn(function()
+			repeat
+				wait()
+			until _G.FullBrightEnabled
+			while wait() do
+				if _G.FullBrightEnabled ~= LatestValue then
+					if not _G.FullBrightEnabled then
+						game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
+						game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
+						game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
+						game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
+						game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
+					else
+						game:GetService("Lighting").Brightness = 1
+						game:GetService("Lighting").ClockTime = 12
+						game:GetService("Lighting").FogEnd = 786543
+						game:GetService("Lighting").GlobalShadows = false
+						game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
+					end
+					LatestValue = not LatestValue
+				end
+			end
+		end)
+	end
+end)
+
+
+
+GodMode.Name = "God Mode"
+GodMode.Parent = GunMods
+GodMode.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+GodMode.Position = UDim2.new(0.738919616, 0, 1.25999999, 0)
+GodMode.Size = UDim2.new(0, 94, 0, 30)
+GodMode.Font = Enum.Font.SciFi
+GodMode.Text = "God mode"
+GodMode.TextColor3 = Color3.fromRGB(126, 0, 255)
+GodMode.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = GunMods
+Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Speed.Position = UDim2.new(0.00574654341, 0, 3.01999998, 0)
+Speed.Size = UDim2.new(0, 94, 0, 30)
+Speed.Font = Enum.Font.SciFi
+Speed.Text = "Speed Hold Q"
+Speed.TextColor3 = Color3.fromRGB(126, 0, 255)
+Speed.TextSize = 14.000
+
+exit.Name = "exit"
+exit.Parent = TPGUI
+exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exit.BackgroundTransparency = 1.000
+exit.Position = UDim2.new(0.984444499, 0, -0.0767353699, 0)
+exit.Size = UDim2.new(0, 24, 0, 29)
+exit.Font = Enum.Font.SciFi
+exit.Text = "x"
+exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+exit.TextSize = 14.000
+
+Disclamier.Name = "Disclamier"
+Disclamier.Parent = TPGUI
+Disclamier.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Disclamier.BackgroundTransparency = 0.350
+Disclamier.Position = UDim2.new(-0.0252871513, 0, -0.056555748, 0)
+Disclamier.Size = UDim2.new(0, 420, 0, 292)
+
+TextLabel.Parent = Disclamier
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.600
+TextLabel.Position = UDim2.new(-3.57627869e-07, 0, 0.136986285, 0)
+TextLabel.Size = UDim2.new(0, 420, 0, 242)
+TextLabel.Font = Enum.Font.PermanentMarker
+TextLabel.Text = "In order to use tp first you must enable god mode!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 22.000
+
+exit2.Name = "exit2"
+exit2.Parent = Disclamier
+exit2.BackgroundColor3 = Color3.fromRGB(7, 255, 27)
+exit2.Position = UDim2.new(0.298730224, 0, 0.795193672, 0)
+exit2.Size = UDim2.new(0, 170, 0, 29)
+exit2.Font = Enum.Font.SciFi
+exit2.Text = "Alright let me TP now"
+exit2.TextColor3 = Color3.fromRGB(0, 0, 0)
+exit2.TextSize = 14.000
+
+TextLabel_2.Parent = Disclamier
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.238095254, 0, 0.229451954, 0)
+TextLabel_2.Size = UDim2.new(0, 219, 0, 56)
+TextLabel_2.Font = Enum.Font.PermanentMarker
+TextLabel_2.Text = "DISCLAIMER"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 94, 14)
+TextLabel_2.TextSize = 77.000
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0, 0, 0.474060833, 0)
+Open.Size = UDim2.new(0, 60, 0, 17)
+Open.Font = Enum.Font.SciFi
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+
+-- Scripts:
+
+local function FAAPP_fake_script() -- drag.LocalScript 
+	local script = Instance.new('LocalScript', drag)
+
+
+end
+coroutine.wrap(FAAPP_fake_script)()
+local function DXYLS_fake_script() -- title.LocalScript 
+	local script = Instance.new('LocalScript', title)
+
+
+end
+coroutine.wrap(DXYLS_fake_script)()
+local function UFBGR_fake_script() -- MadeBy.LocalScript 
+	local script = Instance.new('LocalScript', MadeBy)
+
+
+end
+coroutine.wrap(UFBGR_fake_script)()
+local function PIJHE_fake_script() -- Version.LocalScript 
+	local script = Instance.new('LocalScript', Version)
+
+
+end
+coroutine.wrap(PIJHE_fake_script)()
+local function JWFGH_fake_script() -- Parcel1.LocalScript 
+	local script = Instance.new('LocalScript', Parcel1)
+
+
+end
+coroutine.wrap(JWFGH_fake_script)()
+local function QWGD_fake_script() -- Parcel2.LocalScript 
+	local script = Instance.new('LocalScript', Parcel2)
+
+
+end
+coroutine.wrap(QWGD_fake_script)()
+local function DXRGEM_fake_script() -- Parcel3.LocalScript 
+	local script = Instance.new('LocalScript', Parcel3)
+
+
+end
+coroutine.wrap(DXRGEM_fake_script)()
+local function BBHA_fake_script() -- Parcel4.LocalScript 
+	local script = Instance.new('LocalScript', Parcel4)
+
+
+end
+coroutine.wrap(BBHA_fake_script)()
+local function SMYQ_fake_script() -- Parcel5.LocalScript 
+	local script = Instance.new('LocalScript', Parcel5)
+
+
+end
+coroutine.wrap(SMYQ_fake_script)()
+local function DRSGQW_fake_script() -- RaidMode.LocalScript 
+	local script = Instance.new('LocalScript', RaidMode)
+
+
+end
+coroutine.wrap(DRSGQW_fake_script)()
+local function JQZPN_fake_script() -- MainBase.LocalScript 
+	local script = Instance.new('LocalScript', MainBase)
+
+
+end
+coroutine.wrap(JQZPN_fake_script)()
+local function BCWNPQR_fake_script() -- VehicleSpawn.LocalScript 
+	local script = Instance.new('LocalScript', VehicleSpawn)
+
+
+end
+coroutine.wrap(BCWNPQR_fake_script)()
+local function ZNWYBR_fake_script() -- DesertBase.LocalScript 
+	local script = Instance.new('LocalScript', DesertBase)
+
+
+end
+coroutine.wrap(ZNWYBR_fake_script)()
+local function JNXT_fake_script() -- MTN.LocalScript 
+	local script = Instance.new('LocalScript', MTN)
+
+
+end
+coroutine.wrap(JNXT_fake_script)()
+local function YONHS_fake_script() -- Ronograd.LocalScript 
+	local script = Instance.new('LocalScript', Ronograd)
+
+
+end
+coroutine.wrap(YONHS_fake_script)()
+local function JPMN_fake_script() -- Hangar.LocalScript 
+	local script = Instance.new('LocalScript', Hangar)
+
+
+end
+coroutine.wrap(JPMN_fake_script)()
+local function WTCQGHW_fake_script() -- SnowBase.LocalScript 
+	local script = Instance.new('LocalScript', SnowBase)
+
+
+end
+coroutine.wrap(WTCQGHW_fake_script)()
+local function PDUSF_fake_script() -- GarageMTN.LocalScript 
+	local script = Instance.new('LocalScript', GarageMTN)
+
+
+end
+coroutine.wrap(PDUSF_fake_script)()
+local function TNJNKLR_fake_script() -- OpenWorld.LocalScript 
+	local script = Instance.new('LocalScript', OpenWorld)
+
+
+end
+coroutine.wrap(TNJNKLR_fake_script)()
+local function ZYZVEY_fake_script() -- Norecoil.LocalScript 
+	local script = Instance.new('LocalScript', Norecoil)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local Frame = game:GetService("Players").LocalPlayer.PlayerGui.HUDInterface.Container.Weapon
+
+		local function ModWeapon()
+			if Frame.Visible then
+				for _, Ballsack in next, getgc(true) do
+					if type(Ballsack) == "table" and rawget(Ballsack, "Recoil") then
+						if type(Ballsack.Recoil) == "number" then
+							Ballsack.Recoil = 0
+							--Ballsack.Velocity = 9e9 --instant fast bullets idk
+						end
+					end
+				end
+			end
+		end
+
+		Frame:GetPropertyChangedSignal("Visible"):Connect(ModWeapon)
+	end)
+end
+coroutine.wrap(ZYZVEY_fake_script)()
+local function IQTM_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+
+end
+coroutine.wrap(IQTM_fake_script)()
+local function PFKSI_fake_script() -- FullBright.LocalScript 
+	local script = Instance.new('LocalScript', FullBright)
+
+
+end
+coroutine.wrap(PFKSI_fake_script)()
+local function GFYO_fake_script() -- GunMods.LocalScript 
+	local script = Instance.new('LocalScript', GunMods)
+
+
+end
+coroutine.wrap(GFYO_fake_script)()
+local function YXSPJ_fake_script() -- GodMode.LocalScript 
+	local script = Instance.new('LocalScript', GodMode)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		local plr = game:GetService("Players").LocalPlayer.Character.Humanoid
+		plr.Parent = nil
+		wait()
+		local clone = Instance.new("Humanoid",game:GetService("Players").LocalPlayer.Character)
+		clone.Parent.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-4006.1743164062, 64.216064453125, 803.42260742188))
+		wait(.6)
+		clone:Destroy()                             
+		plr.Parent = game:GetService("Players").LocalPlayer.Character                                                               
+	end)
+end
+coroutine.wrap(YXSPJ_fake_script)()
+local function VGHA_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		down = false
+		velocity = Instance.new("BodyVelocity")
+		velocity.maxForce = Vector3.new(100000, 0, 100000)
+		---vv Use that to change the speed v
+		local speed = 150
+		gyro = Instance.new("BodyGyro")
+		gyro.maxTorque = Vector3.new(100000, 0, 100000)
+
+		local hum = game.Players.LocalPlayer.Character.Humanoid
+
+		function onButton1Down(mouse)
+			down = true
+			velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+			velocity.velocity = (hum.MoveDirection) * speed
+			gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+			while down do
+				if not down then break end
+				velocity.velocity = (hum.MoveDirection) * speed
+				local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+				gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+				wait(0.1)
+			end
+		end
+
+		function onButton1Up(mouse)
+			velocity.Parent = nil
+			gyro.Parent = nil
+			down = false
+		end
+		--To Change the key in those 2 lines, replace the "q" with your desired key
+		function onSelected(mouse)
+			mouse.KeyDown:connect(function(k) if k:lower()=="q"then onButton1Down(mouse)end end)
+			mouse.KeyUp:connect(function(k) if k:lower()=="q"then onButton1Up(mouse)end end)
+		end
+
+		onSelected(game.Players.LocalPlayer:GetMouse())
+
+	end)
+end
+coroutine.wrap(VGHA_fake_script)()
+local function EQVDU_fake_script() -- exit.LocalScript 
+	local script = Instance.new('LocalScript', exit)
+
+
+end
+coroutine.wrap(EQVDU_fake_script)()
+local function WEFI_fake_script() -- exit2.LocalScript 
+	local script = Instance.new('LocalScript', exit2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+
+end
+coroutine.wrap(WEFI_fake_script)()
+local function MGFJXN_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local frame = script.Parent.Parent.TPGUI  
+	local open = false
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Visible = true
+		end
+	end)
+
+end
+coroutine.wrap(MGFJXN_fake_script)()
+local function TUXQKPA_fake_script() -- drag.LocalScript 
+	local script = Instance.new('LocalScript', drag)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(TUXQKPA_fake_script)()
+local function FQQVAY_fake_script() -- title.LocalScript 
+	local script = Instance.new('LocalScript', title)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(FQQVAY_fake_script)()
+local function QQAQZOQ_fake_script() -- MadeBy.LocalScript 
+	local script = Instance.new('LocalScript', MadeBy)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(QQAQZOQ_fake_script)()
+local function NGQGAM_fake_script() -- Version.LocalScript 
+	local script = Instance.new('LocalScript', Version)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(NGQGAM_fake_script)()
+local function KJYYTPW_fake_script() -- Parcel1.LocalScript 
+	local script = Instance.new('LocalScript', Parcel1)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(KJYYTPW_fake_script)()
+local function BKZD_fake_script() -- Parcel2.LocalScript 
+	local script = Instance.new('LocalScript', Parcel2)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(BKZD_fake_script)()
+local function FTDFSO_fake_script() -- Parcel3.LocalScript 
+	local script = Instance.new('LocalScript', Parcel3)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(FTDFSO_fake_script)()
+local function ZPTFFE_fake_script() -- Parcel4.LocalScript 
+	local script = Instance.new('LocalScript', Parcel4)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(ZPTFFE_fake_script)()
+local function NBPBBFW_fake_script() -- Parcel5.LocalScript 
+	local script = Instance.new('LocalScript', Parcel5)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(NBPBBFW_fake_script)()
+local function ILXXWLF_fake_script() -- RaidMode.LocalScript 
+	local script = Instance.new('LocalScript', RaidMode)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(ILXXWLF_fake_script)()
+local function NIRHML_fake_script() -- BaseTent.LocalScript 
+	local script = Instance.new('LocalScript', BaseTent)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(NIRHML_fake_script)()
+local function ZUSC_fake_script() -- VehicleSpawn.LocalScript 
+	local script = Instance.new('LocalScript', VehicleSpawn)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(ZUSC_fake_script)()
+local function OJJW_fake_script() -- DesertBase.LocalScript 
+	local script = Instance.new('LocalScript', DesertBase)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(OJJW_fake_script)()
+local function JOBSF_fake_script() -- MTN.LocalScript 
+	local script = Instance.new('LocalScript', MTN)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(JOBSF_fake_script)()
+local function MORNM_fake_script() -- Ronograd.LocalScript 
+	local script = Instance.new('LocalScript', Ronograd)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(MORNM_fake_script)()
+local function UXZIENV_fake_script() -- Hangar.LocalScript 
+	local script = Instance.new('LocalScript', Hangar)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(UXZIENV_fake_script)()
+local function RLDJOM_fake_script() -- SnowBase.LocalScript 
+	local script = Instance.new('LocalScript', SnowBase)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(RLDJOM_fake_script)()
+local function XUCOZO_fake_script() -- GarageMTN.LocalScript 
+	local script = Instance.new('LocalScript', GarageMTN)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(XUCOZO_fake_script)()
+local function ZZJAAHZ_fake_script() -- OpenWorld.LocalScript 
+	local script = Instance.new('LocalScript', OpenWorld)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(ZZJAAHZ_fake_script)()
+local function YBREAQS_fake_script() -- Norecoil.LocalScript 
+	local script = Instance.new('LocalScript', Norecoil)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(YBREAQS_fake_script)()
+local function KBWAP_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(KBWAP_fake_script)()
+local function EUMTH_fake_script() -- GunMods.LocalScript 
+	local script = Instance.new('LocalScript', GunMods)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(EUMTH_fake_script)()
+local function NAKSE_fake_script() -- FullBright.LocalScript 
+	local script = Instance.new('LocalScript', FullBright)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end
+coroutine.wrap(NAKSE_fake_script)()
+local function PCGLN_fake_script() -- exit.LocalScript 
+	local script = Instance.new('LocalScript', exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+
+end
+coroutine.wrap(PCGLN_fake_script)()
+local function MGFJXN_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local frame = script.Parent.Parent.TPGUI  
+	local open = false
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Visible = true
+		end
+	end)
+
+end
+
+coroutine.wrap(EUMTH_fake_script)()
+local function NAKSE_fake_script() -- GodMode.LocalScript 
+	local script = Instance.new('LocalScript', GodMode)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.0015
+	end
+end

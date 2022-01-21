@@ -1,0 +1,4 @@
+-- Your key is "F2iCWwu99ZcI6wWZX9ysRbuAbkALDIjL7pLv0VYOCUsqJxszm2h85EHrbB2iMiUFEfg"!
+-- Paste this script into your executor and enjoy using something hub!
+getgenv().keySH = "F2iCWwu99ZcI6wWZX9ysRbuAbkALDIjL7pLv0VYOCUsqJxszm2h85EHrbB2iMiUFEfg"
+loadstring(game:HttpGetAsync("https://somethinghub.xyz/script.lua", true))()

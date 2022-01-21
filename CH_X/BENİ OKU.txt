@@ -1,0 +1,19 @@
+Nasıl Kullanılır?
+
+1. Bilgisayarınızın anti virüs programları veya win10 kendi virüs korumasını kapatın
+2. ardından CH_x Açın ve oyuna girin
+3. Enject basarak hileyi oyuna aktifleştire bilirsiniz. ve dile dile Oyunya bilirisiniz
+________________________________________________________________________________________________
+
+İYİ OYUNLAR...
+------------------------------------------------------------------------------------------------
+Exploit ile ilgi hata alırsanız CH_X klasorundekı vcredist Kurun..
+------------------------------------------------------------------------------------------------
+
+YAPIMCI
+--// Made By CanCansever#5141
+
+Yardımcı
+
+--// By Cleaza#3312
+

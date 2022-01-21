@@ -1,0 +1,1 @@
+{"FOV Radius":"241","Smoothness":"1","Aim Key":"VKeyboard","Show FOV":true,"Aimbot":true,"Team Check":false,"ESP":true,"Visuals Color":"Rainbow","Tracers":true}
